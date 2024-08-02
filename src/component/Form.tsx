@@ -11,7 +11,6 @@ const Form = () => {
   const audioRef75 = useRef<HTMLAudioElement>(null);
   const audioRef85 = useRef<HTMLAudioElement>(null);
 
-  // Fonction pour obtenir le pourcentage
   const handleSubmit = async () => {
     if (prenom1 === "ouioui" && prenom2 === "ouioui") {
       setData({
@@ -57,6 +56,9 @@ const Form = () => {
 
   useEffect(() => {
     if (data && data.percentage !== undefined) {
+      document.body.classList.add("background-image");
+      document.body.classList.remove("ouioui");
+
       if (data.percentage > 65 && data.percentage < 100) {
         document.body.style.backgroundImage = `url(/img/oui.jpeg)`;
         if (audioRef65.current) audioRef65.current.play();

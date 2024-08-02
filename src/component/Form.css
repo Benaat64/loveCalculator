@@ -83,8 +83,9 @@ svg {
   width: 100%;
   height: 100%;
 }
-.ouioui.background-image {
+.ouioui {
   background-image: url("/img/ouioui.jpg");
-  background-repeat: repeat; /* Répète l'image horizontalement */
-  background-size: 33% 100%; /* Chaque partie occupe 50% de la largeur */
+  background-repeat: repeat; /* Répète l'image horizontalement et verticalement */
+  background-size: auto; /* Conserve les dimensions naturelles de l'image */
+  background-position: top left; /* Positionne l'image au coin supérieur gauche */
 }
