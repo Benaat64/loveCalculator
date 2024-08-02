@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+body {
+  background-color: #f7a8a8;
+  display: block;
+}
+
+body.background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: black;
+}
+
+input {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #ed6a5a;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ed6a5a;
+
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #d35d50;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Agrandissement du SVG */
+svg {
+  width: 100%;
+  height: 100%;
+}
+.ouioui.background-image {
+  background-image: url("/img/ouioui.jpg");
+  background-repeat: repeat; /* Répète l'image horizontalement */
+  background-size: 33% 100%; /* Chaque partie occupe 50% de la largeur */
+}
